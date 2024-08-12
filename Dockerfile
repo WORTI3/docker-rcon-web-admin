@@ -18,8 +18,6 @@ RUN npm install && \
 # 4327: websocket
 EXPOSE 4326 4327
 
-VOLUME ["/opt/rcon-web-admin/db"]
-
 ENV RWA_ENV=TRUE
 
 ENTRYPOINT ["/usr/local/bin/node", "src/main.js", "start"]
